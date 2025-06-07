@@ -1,0 +1,119 @@
+<!-- File renamed: 30day-plan.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unseen Strength - 30-Day Beginner Calisthenics Plan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f2f4f8;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p.lead {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    ul {
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    input[type="email"] {
+      padding: 12px;
+      width: 100%;
+      max-width: 400px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button {
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: white;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .thank-you {
+      display: none;
+      background: #e9ffe9;
+      border: 1px solid #8fdd8f;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    .logo {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+    .cover-image {
+      max-width: 300px;
+      width: 100%;
+      margin: 30px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/unseen-logo-main.png" alt="Unseen Strength Logo" class="logo">
+    <h1>"Discover the 30-Day Bodyweight Program That Turns Total Beginners Into Solid, Functional Athletes"</h1>
+    <img src="images/workoutplan-cover.png" alt="30 Day Workout Plan Cover" class="cover-image">
+    <p class="lead"><strong>This isn't a freebie. It's a transformation.</strong> This 30-day plan is designed to get you from ZERO to STRONG using only bodyweight training. No gym. No fluff. Just real progress.</p>
+    <ul>
+      <li>✅ Build a real calisthenics foundation from scratch</li>
+      <li>✅ 4 full weeks of training with zero equipment needed</li>
+      <li>✅ Train anywhere, anytime — designed for busy beginners</li>
+      <li>✅ Prevent injuries with built-in mobility + warmups</li>
+      <li>✅ Access the same structure that real athletes use to stay consistent</li>
+    </ul>
+    <p><strong>Want access? Enter your email below and get 20% OFF right now.</strong></p>
+    <form id="leadForm">
+      <input type="email" name="email" placeholder="Enter your email to unlock 20% off" required>
+      <br>
+      <button type="submit">Claim My Discount</button>
+    </form>
+    <div class="thank-you" id="thankYou">
+      <p>🎉 Thank you! Your 20% OFF link is ready.</p>
+      <a href="ebooks/beginner-workout-30days.pdf" target="_blank">
+        <button>👉 Download the 30-Day Plan with 20% OFF</button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('leadForm');
+    const thankYou = document.getElementById('thankYou');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.style.display = 'none';
+      thankYou.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
